@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Forecasting",
+    "section": "",
+    "text": "1 Overview\nWhen you first hear the word “forecasting”, you might first think of fancy statistical time series models, or fancy simulations such as climate or weather simulations. But, we will actually cover very little of that. Those sorts of models can be useful when you have lots of data that is closely related to the prediction task, but in many real-world settings you have very limited data and instead have to rely on loosely analogous reference classes and your own world knowledge.\nThus, forecasts have to rely on intuition, while informing that intuition with data, and training your intuition to become more accurate over time.\n\n\n\n\n\n\nForecasts will usually rely on three steps:\n\n\n\n\nForming a worldview,\ngenerating considerations, and\ncombining these considerations into a calibrated probability distribution.\n\n\n\nWithin these overarching steps, there are many individual skills that help you make better forecasts. For instance, while forecasts rely on intuition, people’s intuitions don’t usually map well onto probabilities, at least at first. Fortunately, it is possible to train your intuition to output accurate probabilities with just a few hours of “calibration training” (the subject of Friday’s lecture).\nOn the considerations front, this involves skills such as estimation, trend extrapolation, building good reference classes, and thinking about incentives. On the outcomes front, this involves combatting cognitive biases such as anchoring, and employing “pre-mortems” and other sanity checks."
+  },
+  {
+    "objectID": "why-forecast.html#what-is-forecasting",
+    "href": "why-forecast.html#what-is-forecasting",
+    "title": "2  Why Forecast?",
+    "section": "2.1 What is Forecasting?",
+    "text": "2.1 What is Forecasting?\n\n\n\n\n\n\nForecasting is…\n\n\n\nWe’ll define forecasting as an estimation of a probability of observing a well defined outcome by some date.\n\n\nSome examples of well defined forecasts, along with how they arrived at that conclusion.\n\nAfter looking at the scores from the Big Game for 2 minutes, I’d put a 60% chance on Berkeley winning the next game.\n\n\nI think there’s an 80% chance I’ll finish writing this lecture in less than 6 hours of total work. So far I spent approximately 2 hours on it, I currently have a first draft with some feedback. I’ve given similar talks to about 6 different audiences.\n\n\nThe way I initially valued my equity for Twitch, a startup I joined in 2011, was that I put a 10% chance on Twitch being worth a billion dollars within 5 years. Twitch was valued at 10-20x less than that when I joined, and Instagram had recently been acquired for a billion dollars.\n\nFrom these examples, we see that most “bets” come down to one’s (often implicit) forecasts."
+  },
+  {
+    "objectID": "why-forecast.html#influence-of-forecasting",
+    "href": "why-forecast.html#influence-of-forecasting",
+    "title": "2  Why Forecast?",
+    "section": "2.2 Influence of Forecasting",
+    "text": "2.2 Influence of Forecasting\nHere are some examples:\n\nThe US government and the Gates foundation expected that there was a reasonably high chance vaccines would work against Covid-19 and be developed in time to make a difference. This forecast turned into action through guarantees to buy vaccines from manufacturers (even before FDA approval was given) and in offering funding to scale up manufacturing capacity. Investments on the order of billions probably paid off in trillions of dollars of public good.\nGoogle, Amazon, Facebook, Stripe, and Bitcoin were bets by founders, staff, and investors. For many people with early involvement these bets returned more than all their previous and future bets combined, both financially and in terms of impact on the world.\nFormer President John F. Kennedy said that during the Cuban missile crisis, he thought there was as high as a 50% chance that the situation would escalate to a nuclear exchange.\n\nHopefully these examples make it clear that forecasting accurately can have a huge impact on the world, which is half the motivation for this class. The other half is that, fortunately, forecasting ability can be improved; it’s not a talent that you either have or don’t have."
+  },
+  {
+    "objectID": "calibration.html#calibrate-yourself",
+    "href": "calibration.html#calibrate-yourself",
+    "title": "3  Calibration",
+    "section": "3.1 Calibrate yourself!",
+    "text": "3.1 Calibrate yourself!\n\nhttps://www.openphilanthropy.org/calibration\nYour assignment is to complete at least 20 predictions from the “Confidence Intervals” question set at an 80% confidence interval.\nShow Mr. Chang your results at the end of class tomorrow (5/10) for credit.\nIf you are finished, continue working on it. You can feel free to work on a different question set and/or work with a partner/group. Your grade will be based off of your work ethic during this time, otherwise, you will not get a grade."
+  },
+  {
+    "objectID": "estimations.html#warm-up-1",
+    "href": "estimations.html#warm-up-1",
+    "title": "4  Estimation",
+    "section": "4.1 Warm-up 1",
+    "text": "4.1 Warm-up 1\n\nWhat is the width of the contiguous United States? \n\nObviously the actual answer is a Google search away, but the point of these lessons are so that you can estimate things in your head instead of asking Google. By challenging yourself to do this and improve, you’ll be able to:\n\nFigure out things that are hard to look up. Many things have actual numbers but nobody bothers to have an exact count (e.g. how many people in the U.S. are on the Keto diet right now), especially if it comes from your personal life (e.g. how many hours you spend a day on daydreaming). It’s also important to bear in mind that many “official” sounding numbers (width of the US, say) are themselves obtained from estimation.\n“Stay in shape” with quantitative skills. Estimation is kind of like arithmetic, weight training, or being able to fix things yourself. We can use calculators to do calculations faster, use trolleys to carry things, or send things into a tech repair store, but there is obviously a lot of value in learning to at least do some things “by hand.”"
+  },
+  {
+    "objectID": "estimations.html#warm-up-2",
+    "href": "estimations.html#warm-up-2",
+    "title": "4  Estimation",
+    "section": "4.2 Warm-up 2",
+    "text": "4.2 Warm-up 2\n\nHow many people live in Iceland? \n\nFrom this example, we can learn a few things:\n\nMuch of the skill of estimation is cleverly using what you already know. If you know a lot of things, then it becomes easier to estimate more things. But even if you don’t know a lot of things, you can create a solution that works for you personally by using things you know. Much of the enjoyment of doing estimation is finding clever solutions that personally work for yourself.\nWe see the typical “building block” of estimation: typically, we set up simple algebraic relationships like X=AB, then “solve” for the unknown variable. For example, the second estimate is implicitly saying “the population of Alaska = the population of Iceland * the ratio of their areas” and then “solving” for the Iceland population by dividing the other two. This type of “divide and conquer” makes up for about 90% of the work of estimation.\nAs an example of how estimation “trains your knowledge,” suppose you did the first estimation and then realized you overestimated. This means you can now conclude (and verify!) “Germany was a bit bigger than I thought” and “Iceland is less dense than Germany.” Now you learned a bit more about the world. If you just looked up the number you would have failed to learn this."
+  },
+  {
+    "objectID": "estimations.html#fermi-and-orders-of-magnitude",
+    "href": "estimations.html#fermi-and-orders-of-magnitude",
+    "title": "4  Estimation",
+    "section": "4.3 Fermi and Orders of Magnitude",
+    "text": "4.3 Fermi and Orders of Magnitude\nEstimation is an important part of engineering (in fact there are classes in engineering departments that are about estimation!) and the reason for this is because it allows them to exercise their mental models of the physical world.\nSo what do engineers consider as a close estimate?\n\n4.3.1 Orders of Magnitude\nFrom the Iceland problem, supposing the “right” answer was 300,000 people and you got 400,000 people, then the **absolute *error (the difference) would be 100,000 people. This feels huge, but if you were estimating the population of the U.S. (300 million people) this amount of error suddenly starts to feel very small. This leads us to instead consider the relative error**, the ratio between the estimate and the right answer, instead of the absolute error. In this case, the relative error would be about 1.33.\n\n\n\n\n\n\nNote\n\n\n\nA relative error of 2 would mean the right answer was \\(X\\) but you got \\(X/2\\) or \\(2X\\).\nFor bigger absolute errors, we typically use orders of magnitude of the relative error. This means we measure the relative error by powers of 10, so being “one order of magnitude off” from the true answer \\(X\\) means your answer is somewhere between \\(X/10\\) to \\(10X\\), and “two orders of magnitude” would be between \\(X/100\\) and \\(100X\\).\n\n\nA famous estimation would be the namesake of what we want to consider here:\n\nPhysicist Enrico Fermi estimated the strength of an atomic bomb explosion, obtaining an answer of 10 kilotons of TNT while the accepted answer is about 20.\n\n\nFermi’s relative error here is 2 (\\(\\frac{10}{20}\\)). That’s really good, but you have to consider context too. He was off by 1 order of magnitude (\\(\\frac{20}{10} < 10 < 10(20)\\)), which might be pretty bad if you were actually engineering something, but it’s perfectly fine for estimating.\nIf we are just practicing, then for very big or small numbers (for example, estimating the number of cells in the human body) I think most of us would find an error of within 2 orders of magnitude as “acceptable” and an error within 1 order as “good,” though biologists and/or doctors may want to be harder on themselves!"
+  },
+  {
+    "objectID": "estimations.html#try-some-more",
+    "href": "estimations.html#try-some-more",
+    "title": "4  Estimation",
+    "section": "4.4 Try some more",
+    "text": "4.4 Try some more\n\n\n\n\n\n\nA Few Things\n\n\n\nDon’t look up anything since it makes this boring.\nIf you did already know this / looked it up before, you should try to do this some other way - you will still be able to learn something from the training.\nIf you finish very quickly, you should see if you can do it a different way. Good estimators frequently get the same thing a couple of ways so they can find an even better estimate.\n\n\n\nWhat is the radius of the Earth? \n\n\nHow many McDonalds are there in the US?"
+  },
+  {
+    "objectID": "estimations.html#summary",
+    "href": "estimations.html#summary",
+    "title": "4  Estimation",
+    "section": "4.5 Summary",
+    "text": "4.5 Summary\n\nWhen in doubt, Google, but estimation is kind of like the weight room for forecasting and reasoning about the world.\nIt is also very helpful for physicists and surprisingly helpful for things like tech / business interviews, where people use it as a way to test your grasp of the world, so there’s some pragmatic reason to get good at them\nIt turns out that we have a lot of nice intuitions about the world, and estimation allows us to articulate them and get pretty good numbers!"
+  },
+  {
+    "objectID": "zeroth-first-forecasting.html#zeroth-order",
+    "href": "zeroth-first-forecasting.html#zeroth-order",
+    "title": "5  Zeroth and First Order Forecasting",
+    "section": "5.1 Zeroth-Order Approximation",
+    "text": "5.1 Zeroth-Order Approximation\nA zeroth-order approximation is where we assume that today will look like yesterday (i.e. that the world is roughly constant). To do this, we’ll be considering reference classes.\nThe basic idea behind reference class forecasting is simple: rather than thinking in detail about how long a task will take (or about any other prediction), just think of the last 3-5 instances where something similar happened, and give the average answer. So for homework, a good predictor of how long it takes to complete is the average of other problem sets for that class. For commute time, take the average commute time over the past week.\nThis works for more than just avoiding the planning fallacy. It’s also useful when making a budget. For example, the plot below shows the evolution of the share of social protection in US government expenditure between 2007 and 2015. The value of this figure in 2015 is well-predicted by its average over the past 5 years.\n\n\n\nBrainstorming exercise. What are other areas where a zeroth-order approximation might work well?"
+  },
+  {
+    "objectID": "zeroth-first-forecasting.html#first-order-approximation",
+    "href": "zeroth-first-forecasting.html#first-order-approximation",
+    "title": "5  Zeroth and First Order Forecasting",
+    "section": "5.2 First-order Approximation",
+    "text": "5.2 First-order Approximation\nThere’s some cases where a zeroth-order approximation isn’t very helpful. In February 2020, if you were thinking about COVID-19, there were several zeroth-order approximations you could have made:\n\nLook at the world generally, and assume that it the end of March will look like it did in the middle of February.\nOr similarly, look at the number of available ICU beds and assume it will stay roughly the same.\nOr assume the number of cases will stay roughly the same.\n\nI think if you asked most people, they would have disagreed with assumption 3. But most people were implicitly applying a zeroth-order approximation to 1 when thinking about the future.\nA better strategy would have been to plot the number of Covid cases over time, tracing a line through the recent data points, and to use this line to predict future data points. You could then have used this first-order approximation of the number of Covid cases to predict the overall state of the world and the number of available ICU beds. This would likely have outperformed using assumptions 1. and 2.\nFor example, here’s what the data would have looked like in the United Kingdom at the end of February 2020:\n\n\nHere you can see the number of confirmed Covid cases per million in the UK, between early February 2020 and late February 2020: cases remain stable until February 23, then increase. A first-order approximation between Feb 15 and Feb 25 predicts that Covid cases will keep increasing over time, with around an extra 0.002 cases per million every day. Feel free to play around with the dates to see how well and for how long tracing a line through the data would have worked!\nNote that the choice of what to first-order approximate matters a lot here. If you had applied a first-order approximation to the number of available ICU beds in late February, you wouldn’t have thought much would change.\n\nDiscussion question. How can we decide which variables are good ones to first-order approximate?"
+  },
+  {
+    "objectID": "zeroth-first-forecasting.html#limitations-of-first-order-approximation",
+    "href": "zeroth-first-forecasting.html#limitations-of-first-order-approximation",
+    "title": "5  Zeroth and First Order Forecasting",
+    "section": "5.3 Limitations of First Order Approximation",
+    "text": "5.3 Limitations of First Order Approximation\nIn many cases, there’s some clear limit to growth, which means the first-order approximation has to stop eventually. For instance, Tesla’s revenue has grown around 50% per year from 2015 to 2020. If it continues at this rate, then it would account for >50% of the U.S. economy by 2035. This seems unlikely, so the growth will probably slow down sometime before then.\nAs a more extreme example, the number of compute-hours used in the largest AI experiments grew around 10x/year between 2012 and 2018. This probably can’t continue for more than 6-7 years before matching the world’s total current hardware budget 1.\nAnd as an example that already happened, in early 2020 the number of COVID-19 cases was doubling perhaps every 4.5 days. Starting from a few hundred cases, a first-order approximation of its logarithm would have predicted that everyone in the world would be infected within 4 months. While many people have been infected, it’s not everyone, and it took much longer than 4 months.\n\n\n\n\n\n\nNote\n\n\n\nAll of these are examples of saturation effects: fast-growing trends tend to eventually run into countervailing forces that limit the rate of growth. It’s not always easy to predict exactly when these will kick in, but looking at hard limits like those above can help provide some bound. On the other hand, I think most people intuitively underestimate how long trends last."
+  },
+  {
+    "objectID": "zeroth-first-forecasting.html#limitations-of-zeroth-order-approximation",
+    "href": "zeroth-first-forecasting.html#limitations-of-zeroth-order-approximation",
+    "title": "5  Zeroth and First Order Forecasting",
+    "section": "5.4 Limitations of Zeroth Order Approximation",
+    "text": "5.4 Limitations of Zeroth Order Approximation\n\nDiscussion question. How many deportations were there under the Trump administration in 2018? For comparison, here are numbers under Obama and Bush.\n\n\n\n\nYear\nDeportations\n\n\n\n\n2016\n332,227\n\n\n2015\n325,668\n\n\n2014\n405,239\n\n\n2013\n432,281\n\n\n2012\n415,636\n\n\n2011\n390,442\n\n\n2010\n382,461\n\n\n2009\n379,739\n\n\n2008\n359,795\n\n\n2007\n319,382\n\n\n2006\n280,974\n\n\n2005\n246,431\n\n\n2004\n240,665\n\n\n2003\n211,098\n\n\n2002\n165,168\n\n\n2001\n189,026\n\n\n\n\nBrainstorming exercise. What are other places where zeroth-order (and even first-order) might not work well? How could we tell?"
+  },
+  {
+    "objectID": "base-rates-and-reference-classes.html#decomposing-the-problem",
+    "href": "base-rates-and-reference-classes.html#decomposing-the-problem",
+    "title": "6  Base Rates and Reference Classes",
+    "section": "6.1 Decomposing the Problem",
+    "text": "6.1 Decomposing the Problem\nLet’s only take these key considerations in why Biden wouldn’t complete his term:\n\nDeath by natural causes \nDeath by assassination \nImpeachment / resignation \nThe presidency no longer exists (due to a coup, invasion, etc.) \n\n\n\n\n\n\n\nSo…\n\n\n\n\n\nWhat did we gain from applying this decomposition? The main thing is that it allows us to incorporate age when predicting death from natural causes, which feels correct to me. On the other hand, it left us with a very small sample size for assassinations, and in general left us to make a lot of arbitrary choices that might let personal biases creep in. That being said, the number is in the same ballpark but a bit lower than the 92% answer from the simplest method, which feels right given Biden’s age."
+  },
+  {
+    "objectID": "base-rates-and-reference-classes.html#other-examples",
+    "href": "base-rates-and-reference-classes.html#other-examples",
+    "title": "6  Base Rates and Reference Classes",
+    "section": "6.2 Other Examples",
+    "text": "6.2 Other Examples\nThere are many cases where base rates are a useful tool. For instance, maybe I want to understand the probability that I get COVID-19 in the next month (perhaps as a function of what activities I do).\n\nBrainstorming exercise. What base rates would you use for the above question? What factors are most important to take into account? \n\nHere are some other questions where base rates provide valuable information:\n\nWhat will be my GPA after my first term in college?\nHow much Series A funding will a specific startup get?\nWill someone break Usain Bolt’s 100-meter dash 9.58s world record by the end of 2024?\nWill any new country join NATO in 2023?\n\n\n*Brainstorming exercise. What are other areas where base rates are helpful?"
+  },
+  {
+    "objectID": "base-rates-and-reference-classes.html#dangers-of-base-rates",
+    "href": "base-rates-and-reference-classes.html#dangers-of-base-rates",
+    "title": "6  Base Rates and Reference Classes",
+    "section": "6.3 Dangers of Base Rates",
+    "text": "6.3 Dangers of Base Rates\nAs I hinted above, the flexibility of base rate forecasting also carries risk. If we make too many arbitrary choices when defining a base rate, we can succumb to our own cognitive biases. For instance, consider the following article that gave Trump a 3% chance of winning the 2016 election. Its reasoning invokes base rates, defining a reference class of “Candidates that are good with the media and give them something to write about but, let’s be real, could never be president”. They said Trump was in this reference class and no such candidate had ever won, so their base rate was 0%. (They then adjusted it up to 3% based on Trump’s strong polling performance.) If you find yourself doing something like this, watch out.\n\n\n\n\n\n\nNote\n\n\n\nThe best ways to avoid failures like the Trump prediction are to look for the simplest reference classes you can find (only adjusting for obviously important and objective factors like age), or to average over lots of ways of constructing your reference class so that no single set of choices dominates the forecast."
+  }
+]
