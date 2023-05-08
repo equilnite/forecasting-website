@@ -1,0 +1,86 @@
+# Zeroth and First Order Forecasting
+
+Consider...
+
+> Let’s say you are trying to predict how long it will take to finish your homework assignment. You think about all the problems and how long each will take. Problem 4 looks a little hard but you’re sure if you try real hard you can solve it in 2 hours. Okay, so maybe 7 hours total? Plenty of time to finish if you start the afternoon before it’s due!
+>
+> Of course, the last 3 homework assignments all took between 12 and 16 hours…
+
+> You’re getting ready to go to class in the morning. Your first class is at 9:10 am. When should you leave? Well, google maps says 8 minutes from your dorm, but if you bike real fast you can do it in 6. So it’s probably fine to leave at 9:04…
+>
+> …you say to yourself, and then get to class at 9:20 (just like the last 3 times). Because of course, you forgot to account for the time it takes to tie your shoes, find your keys, put on your backpack, unlock your bike, lock your bike, and walk to the classroom.
+
+::: {.callout-note}
+These are both instances of the **planning fallacy**, where humans regularly underestimate the time it takes to finish a task. In the real world, employees and teams that can avoid the planning fallacy have a huge advantage over those that don’t. The planning fallacy is an example of a cognitive bias, which we’ll talk about in more detail in a later lecture. For now, though, I want to talk about a simple but very effective technique for avoiding the planning fallacy, and more generally for making accurate predictions, called **reference class forecasting**.
+:::
+
+## Zeroth-Order Approximation {#zeroth-order}
+
+A **zeroth-order approximation** is where we assume that today will look like yesterday (i.e. that the world is roughly constant). To do this, we'll be considering **reference classes**.
+
+The basic idea behind reference class forecasting is simple: rather than thinking in detail about how long a task will take (or about any other prediction), just think of the last 3-5 instances where something similar happened, and give the average answer. So for homework, a good predictor of how long it takes to complete is the average of other problem sets for that class. For commute time, take the average commute time over the past week.
+
+This works for more than just avoiding the planning fallacy. It’s also useful when making a budget. For example, the plot below shows the evolution of the share of social protection in US government expenditure between 2007 and 2015. The value of this figure in 2015 is well-predicted by its average over the past 5 years.
+
+<iframe src="https://ourworldindata.org/grapher/share-social-protection-in-government-exp-oecd-2013?time=2009..2015&country=~USA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+> **Brainstorming exercise**. What are other areas where a zeroth-order approximation might work well? \vspace{15em}
+
+## First-order Approximation
+
+There’s some cases where a zeroth-order approximation isn’t very helpful. In February 2020, if you were thinking about COVID-19, there were several zeroth-order approximations you could have made:
+
+1. Look at the world generally, and assume that it the end of March will look like it did in the middle of February.
+2. Or similarly, look at the number of available ICU beds and assume it will stay roughly the same.
+3. Or assume the number of cases will stay roughly the same.
+
+I think if you asked most people, they would have disagreed with assumption 3. But most people were implicitly applying a zeroth-order approximation to 1 when thinking about the future.
+
+A better strategy would have been to plot the number of Covid cases over time, tracing a line through the recent data points, and to use this line to predict future data points. You could then have used this first-order approximation of the number of Covid cases to predict the overall state of the world and the number of available ICU beds. This would likely have outperformed using assumptions 1. and 2.
+
+For example, here’s what the data would have looked like in the United Kingdom at the end of February 2020:
+
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=earliest..2020-03-02&facet=none&country=~GBR&pickerSort=desc&pickerMetric=new_cases_smoothed_per_million&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+Here you can see the number of confirmed Covid cases per million in the UK, between early February 2020 and late February 2020: cases remain stable until February 23, then increase. A first-order approximation between Feb 15 and Feb 25 predicts that Covid cases will keep increasing over time, with around an extra 0.002 cases per million every day. Feel free to play around with the dates to see how well and for how long tracing a line through the data would have worked!
+
+Note that the choice of what to first-order approximate matters a lot here. If you had applied a first-order approximation to the number of available ICU beds in late February, you wouldn’t have thought much would change.
+
+> **Discussion question**. How can we decide which variables are good ones to first-order approximate? \vspace{5em}
+
+## Limitations of First Order Approximation
+
+In many cases, there’s some clear limit to growth, which means the first-order approximation has to stop eventually. For instance, [Tesla’s revenue has grown around 50% per year from 2015 to 2020](https://www.statista.com/statistics/272120/revenue-of-tesla/). If it continues at this rate, then it would account for >50% of the U.S. economy by 2035. This seems unlikely, so the growth will probably slow down sometime before then.
+
+As a more extreme example, [the number of compute-hours used in the largest AI experiments grew around 10x/year between 2012 and 2018](https://openai.com/blog/ai-and-compute/). This probably can’t continue for more than 6-7 years before matching the world’s total current hardware budget 1.
+
+And as an example that already happened, in early 2020 the number of COVID-19 cases was doubling perhaps every 4.5 days. Starting from a few hundred cases, a first-order approximation of its logarithm would have predicted that everyone in the world would be infected within 4 months. While many people have been infected, it’s not everyone, and it took much longer than 4 months.
+
+::: {.callout-note}
+All of these are examples of saturation effects: fast-growing trends tend to eventually run into countervailing forces that limit the rate of growth. It’s not always easy to predict exactly when these will kick in, but looking at hard limits like those above can help provide some bound. On the other hand, I think most people intuitively underestimate how long trends last.
+:::
+
+## Limitations of Zeroth Order Approximation
+
+> **Discussion question**. How many deportations were there under the Trump administration in 2018? For comparison, here are numbers under Obama and Bush.
+
+| **Year** | **Deportations** |
+|----------|------------------|
+| 2016     | 332,227          |
+| 2015     | 325,668          |
+| 2014     | 405,239          |
+| 2013     | 432,281          |
+| 2012     | 415,636          |
+| 2011     | 390,442          |
+| 2010     | 382,461          |
+| 2009     | 379,739          |
+| 2008     | 359,795          |
+| 2007     | 319,382          |
+| 2006     | 280,974          |
+| 2005     | 246,431          |
+| 2004     | 240,665          |
+| 2003     | 211,098          |
+| 2002     | 165,168          |
+| 2001     | 189,026          |
+
+> **Brainstorming exercise**. What are other places where zeroth-order (and even first-order) might not work well? How could we tell? \vspace{5em}

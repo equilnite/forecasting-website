@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Forecasting"
+  page-footer:
+    left: |
+          This material is adapted from the course material from [Stat 157/260 Forecasting @ UC Berkeley](http://www.forecastingclass.com/).
+          The provided text on this page was originally written by Jacob Steinhardt, Danny Hernandez, Frances Ding, and Yan Zhang.
+  chapters:
+    - index.qmd
+    - why-forecast.qmd
+    - calibration.qmd
+    - estimations.qmd
+    - zeroth-first-forecasting.qmd
+    - base-rates-and-reference-classes.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+

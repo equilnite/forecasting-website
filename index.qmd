@@ -1,0 +1,17 @@
+# Overview
+
+When you first hear the word "forecasting", you might first think of fancy statistical time series models, or fancy simulations such as climate or weather simulations. But, we will actually cover very little of that. Those sorts of models can be useful when you have lots of data that is closely related to the prediction task, but in many real-world settings you have very limited data and instead have to rely on loosely analogous reference classes and your own world knowledge.
+
+Thus, forecasts have to rely on intuition, while informing that intuition with data, and training your intuition to become more accurate over time.
+
+::: {.callout-important}
+## Forecasts will usually rely on three steps: 
+
+1. Forming a worldview, 
+2. generating considerations, and 
+3. combining these considerations into a calibrated probability distribution.
+:::
+
+Within these overarching steps, there are many individual skills that help you make better forecasts. For instance, while forecasts rely on intuition, people's intuitions don't usually map well onto probabilities, at least at first. Fortunately, it is possible to train your intuition to output accurate probabilities with just a few hours of "calibration training" (the subject of Friday's lecture).
+
+On the considerations front, this involves skills such as estimation, trend extrapolation, building good reference classes, and thinking about incentives. On the outcomes front, this involves combatting cognitive biases such as anchoring, and employing "pre-mortems" and other sanity checks.

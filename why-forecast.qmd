@@ -1,0 +1,43 @@
+# Why Forecast?
+
+Betting on things in life is natural, and learning about responsible, reliable forecasting to guide your life can be helpful.
+
+Some examples of bets that could come up in your own life are:
+
+- Some of you will take some equity from a company, and therefore bet on the success of the company. The good bets are likely to be worth millions of dollars.
+
+- How likely is this relationship to last 20 years? Assuming it lasts, how likely am I to be extremely happy with it?
+
+- Some of you will do research and pursue scientific breakthroughs. Most of the value of research is in a handful of breakthroughs, and you have to choose research directions without knowing whether they will lead to a breakthrough.
+
+- How long will it take me to finish this homework? (Am I actually going to be able to make it to that thing I said I’d go to?)
+
+## What is Forecasting?
+
+::: {.callout-note}
+## Forecasting is...
+
+We'll define forecasting as an estimation of a probability of observing a well defined outcome by some date.
+:::
+
+Some examples of well defined forecasts, along with how they arrived at that conclusion.
+
+> After looking at the scores from the Big Game for 2 minutes, I’d put a 60% chance on Berkeley winning the next game.
+
+>  I think there’s an 80% chance I’ll finish writing this lecture in less than 6 hours of total work. So far I spent approximately 2 hours on it, I currently have a first draft with some feedback. I’ve given similar talks to about 6 different audiences.
+
+> The way I initially valued my equity for Twitch, a startup I joined in 2011, was that I put a 10% chance on Twitch being worth a billion dollars within 5 years. Twitch was valued at 10-20x less than that when I joined, and Instagram had recently been acquired for a billion dollars.
+
+From these examples, we see that most “bets” come down to one’s (often implicit) forecasts.
+
+## Influence of Forecasting
+
+Here are some examples:
+
+- The US government and the Gates foundation expected that there was a reasonably high chance vaccines would work against Covid-19 and be developed in time to make a difference. This forecast turned into action through guarantees to buy vaccines from manufacturers (even before FDA approval was given) and in offering funding to scale up manufacturing capacity. Investments on the order of billions probably paid off in trillions of dollars of public good.
+
+- Google, Amazon, Facebook, Stripe, and Bitcoin were bets by founders, staff, and investors. For many people with early involvement these bets returned more than all their previous and future bets combined, both financially and in terms of impact on the world.
+
+- Former President John F. Kennedy said that during the Cuban missile crisis, he thought there was as high as a 50% chance that the situation would escalate to a nuclear exchange.
+
+Hopefully these examples make it clear that forecasting accurately can have a huge impact on the world, which is half the motivation for this class. The other half is that, fortunately, forecasting ability can be improved; it’s not a talent that you either have or don’t have.

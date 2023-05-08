@@ -1,0 +1,89 @@
+# Estimation
+
+::: {.callout-note}
+## What is Estimation?
+
+Forecasting, like any other quantitative activity, involves putting numbers down at some point. Often, getting the exact numbers isn’t too important, but it’s important to get a number “decent” enough to get a good grasp of the situation. This is the skill of **estimation**.
+:::
+
+For example, suppose we are forecasting something involving the population density of the US, either soon or in 100 years.
+
+1. To get the population density, by definition we need the number of people divided by the geographical area. This means we need both of these numbers. Let’s start with the geographical area.
+
+2. To get the geographical area, one way to get there is having the (inexact, because it’s an estimation) model that the US is basically a rectangle. This means we can estimate its area by having numbers for its width and height.
+
+3. To get the width of the US…
+
+This train of thought leads nicely to our first warmup:
+
+## Warm-up 1
+
+> **What is the width of the contiguous United States?** \vspace{15em}
+
+Obviously the actual answer is a Google search away, but the point of these lessons are so that you can estimate things in your head instead of asking Google. By challenging yourself to do this and improve, you'll be able to:
+
+- Figure out things that are hard to look up. Many things have actual numbers but nobody bothers to have an exact count (e.g. how many people in the U.S. are on the Keto diet right now), especially if it comes from your personal life (e.g. how many hours you spend a day on daydreaming). It’s also important to bear in mind that many “official” sounding numbers (width of the US, say) are themselves obtained from estimation.
+
+- “Stay in shape” with quantitative skills. Estimation is kind of like arithmetic, weight training, or being able to fix things yourself. We can use calculators to do calculations faster, use trolleys to carry things, or send things into a tech repair store, but there is obviously a lot of value in learning to at least do some things “by hand.”
+
+## Warm-up 2
+
+> **How many people live in Iceland?** \vspace{15em}
+
+From this example, we can learn a few things: 
+
+1. Much of the skill of estimation is cleverly using what you already know. If you know a lot of things, then it becomes easier to estimate more things. But even if you don’t know a lot of things, you can create a solution that works for you personally by using things you know. Much of the enjoyment of doing estimation is finding clever solutions that personally work **for yourself**.
+
+2. We see the typical “building block” of estimation: typically, we set up simple algebraic relationships like X=AB, then “solve” for the unknown variable. For example, the second estimate is implicitly saying “the population of Alaska = the population of Iceland * the ratio of their areas” and then “solving” for the Iceland population by dividing the other two. This type of “divide and conquer” makes up for about 90% of the work of estimation.
+
+3. As an example of how estimation “trains your knowledge,” suppose you did the first estimation and then realized you overestimated. This means you can now conclude (and verify!) “Germany was a bit bigger than I thought” and “Iceland is less dense than Germany.” Now you learned a bit more about the world. If you just looked up the number you would have failed to learn this.
+
+## Fermi and Orders of Magnitude
+
+Estimation is an important part of engineering (in fact there are classes in engineering departments that are about estimation!) and the reason for this is because it allows them to exercise their mental models of the physical world.
+
+So what do engineers consider as a close estimate?
+
+### Orders of Magnitude
+
+From the Iceland problem, supposing the “right” answer was 300,000 people and you got 400,000 people, then the **absolute *error** (the difference) would be 100,000 people. This feels huge, but if you were estimating the population of the U.S. (300 million people) this amount of error suddenly starts to feel very small. This leads us to instead **consider the relative error**, *the ratio between the estimate and the right answer*, instead of the absolute error. In this case, the relative error would be about 1.33.
+
+::: {.callout-note}
+A relative error of 2 would mean the right answer was $X$ but you got $X/2$ or $2X$.
+
+For bigger absolute errors, we typically use orders of magnitude of the relative error. This means we measure the relative error by powers of 10, so being “one order of magnitude off” from the true answer $X$ means your answer is somewhere between $X/10$ to $10X$, and “two orders of magnitude” would be between $X/100$ and $100X$.
+:::
+
+A famous estimation would be the namesake of what we want to consider here: 
+
+> Physicist Enrico Fermi estimated the strength of an atomic bomb explosion, obtaining an answer of 10 kilotons of TNT while the accepted answer is about 20.
+
+- Fermi's relative error here is 2 ($\frac{10}{20}$). That's really good, but you have to consider context too. He was off by 1 order of magnitude ($\frac{20}{10} < 10 < 10(20)$), which might be pretty bad if you were actually engineering something, but it's perfectly fine for estimating.
+
+- If we are just practicing, then for very big or small numbers (for example, estimating the number of cells in the human body) I think most of us would find an error of within 2 orders of magnitude as “acceptable” and an error within 1 order as “good,” though biologists and/or doctors may want to be harder on themselves!
+
+## Try some more
+
+::: {.callout-warning}
+## A Few Things
+
+Don’t look up anything since it makes this boring.
+
+If you did already know this / looked it up before, you should try to do this some other way - you will still be able to learn something from the training.
+
+If you finish very quickly, you should see if you can do it a different way. Good estimators frequently get the same thing a couple of ways so they can find an even better estimate.
+
+:::
+
+> **What is the radius of the Earth?** \vspace{15em}
+
+
+> **How many McDonalds are there in the US?** \vspace{15em}
+
+## Summary
+
+1. When in doubt, Google, but estimation is kind of like the weight room for forecasting and reasoning about the world.
+
+2. It is also very helpful for physicists and surprisingly helpful for things like tech / business interviews, where people use it as a way to test your grasp of the world, so there’s some pragmatic reason to get good at them
+
+3. It turns out that we have a lot of nice intuitions about the world, and estimation allows us to articulate them and get pretty good numbers!

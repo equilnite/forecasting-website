@@ -1,0 +1,35 @@
+# Calibration
+
+Forecasting skills can be improved! When we forecast, we typically consider a confidence level (exactly like confidence levels in confidence intervals). So how "confident" are we in our guesses? 
+
+When evaluating this, we'll have to consider mean success rate of our forecasts. 
+
+::: {.callout-note}
+## Well-calibrated?
+
+If we can get a the same proportion of questions as the confidence level that we are aiming for, then we are "well-calibrated"
+
+We are poorly calibrated:
+
+* if we get a lower proportion than the confidence level (over-confident)
+* if we get a higher proportion than the confidence level (under-confident)
+
+:::
+    
+Here's some examples of successful calibration:
+
+> With a 1 hr training Phillip Tetlock, a professor at the University of Pennsylvania, improved participants’ forecasts by 14% (relative to a control group) in a year-long geopolitical forecasting competition. Some examples of forecasts that were in the competition: What is the probability the U.S. will sign the Paris Accord?; Will the U.S. deploy ground troops in Syria?; etc. This research was mostly done in the last decade, so it’s only been leveraged a modest amount.
+
+> By measuring forecasting performance and putting the most accurate forecasters together on teams, Tetlock was able to assemble teams that beat professional CIA analysts, who had access to classified intel. ![CIA analysts versus professional forecaster results](images/forecasting_training.png)
+
+> Douglas Hubbard found that most people can become calibrated in about 2 hours of training. ![Calibration results](images/calibration.png)
+
+## Calibrate yourself!
+
+- [https://www.openphilanthropy.org/calibration](https://www.openphilanthropy.org/calibration)
+
+- Your assignment is to complete at least 20 predictions from the "Confidence Intervals" question set at an 80% confidence interval.
+
+- Show Mr. Chang your results at the end of class tomorrow (5/10) for credit.
+
+- If you are finished, continue working on it. You can feel free to work on a different question set and/or work with a partner/group. Your grade will be based off of your work ethic during this time, otherwise, you will not get a grade.
