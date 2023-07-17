@@ -19,6 +19,7 @@ book:
 format:
   html:
     theme: cosmo
+    css: css/style.css
   pdf:
     documentclass: scrreprt
 

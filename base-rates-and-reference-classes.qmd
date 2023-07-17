@@ -1,8 +1,10 @@
 # Base Rates and Reference Classes
 
-Let’s start by considering the following question:
+::: {.callout-question .callout}
+## Let’s start by considering the following question
 
-> What is the probability that Joe Biden is President of the United States on Nov. 1st, 2024?
+What is the probability that Joe Biden is President of the United States on Nov. 1st, 2024?
+:::
 
 Brainstorm a few factors / historical events that have caused presidents to leave office before the end of their elected term. What is the **base rate** of these events? In other words, what is the rate of occurrence of these events? \vspace{15em}
 
