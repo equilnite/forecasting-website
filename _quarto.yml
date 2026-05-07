@@ -1,6 +1,8 @@
 project:
   type: book
-  output-dir: docs
+  preview:
+    port: 4200
+    browser: false
 
 book:
   title: "Forecasting"
@@ -18,8 +20,17 @@ book:
 
 format:
   html:
+    number-depth: 3
+    include-in-header:
+      - header.html
     theme: cosmo
-    css: css/style.css
-  pdf:
-    documentclass: scrreprt
+    df-print: paged
+    css: ["style/console.css", "style/style.css"]
+    page-layout: full
+
+execute:
+  echo: false
+  warning: false
+  freeze: true
+
 
