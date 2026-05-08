@@ -69,8 +69,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="style/console.css">
-<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -153,9 +151,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#decomposing-the-problem" id="toc-decomposing-the-problem" class="nav-link active" data-scroll-target="#decomposing-the-problem"><span class="header-section-number">6.1</span> Decomposing the Problem</a></li>
-  <li><a href="#other-examples" id="toc-other-examples" class="nav-link" data-scroll-target="#other-examples"><span class="header-section-number">6.2</span> Other Examples</a></li>
-  <li><a href="#dangers-of-base-rates" id="toc-dangers-of-base-rates" class="nav-link" data-scroll-target="#dangers-of-base-rates"><span class="header-section-number">6.3</span> Dangers of Base Rates</a></li>
+  <li><a href="#lets-start-by-considering-the-following-question" id="toc-lets-start-by-considering-the-following-question" class="nav-link active" data-scroll-target="#lets-start-by-considering-the-following-question"><span class="header-section-number">6.1</span> Let’s start by considering the following question</a></li>
+  <li><a href="#decomposing-the-problem" id="toc-decomposing-the-problem" class="nav-link" data-scroll-target="#decomposing-the-problem"><span class="header-section-number">6.2</span> Decomposing the Problem</a></li>
+  <li><a href="#other-examples" id="toc-other-examples" class="nav-link" data-scroll-target="#other-examples"><span class="header-section-number">6.3</span> Other Examples</a></li>
+  <li><a href="#dangers-of-base-rates" id="toc-dangers-of-base-rates" class="nav-link" data-scroll-target="#dangers-of-base-rates"><span class="header-section-number">6.4</span> Dangers of Base Rates</a></li>
   </ul>
 </nav>
     </div>
@@ -181,19 +180,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-question no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Let’s start by considering the following question
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>What is the probability that Joe Biden is President of the United States on Nov.&nbsp;1st, 2024?</p>
-</div>
-</div>
+<section id="lets-start-by-considering-the-following-question" class="level2 callout-question" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="lets-start-by-considering-the-following-question"><span class="header-section-number">6.1</span> Let’s start by considering the following question</h2>
+<p>What is the probability that Donald Trump is President of the United States on Nov.&nbsp;1st, 2028?</p>
+</section>
 <p>Brainstorm a few factors / historical events that have caused presidents to leave office before the end of their elected term. What is the <strong>base rate</strong> of these events? In other words, what is the rate of occurrence of these events? </p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -208,9 +198,9 @@ Base Rates
 <p>Base rates can be powerful as they allow us to draw analogies with related cases even when we don’t have directly relevant data or a trend line to extrapolate. In that sense they are like <a href="zeroth-first-forecasting.html#zeroth-order">zeroth-order forecasting</a>, but can work even when you don’t have a clear time series or other trend to base a forecast on.</p>
 </div>
 </div>
-<section id="decomposing-the-problem" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="decomposing-the-problem"><span class="header-section-number">6.1</span> Decomposing the Problem</h2>
-<p>Let’s only take these key considerations in why Biden wouldn’t complete his term:</p>
+<section id="decomposing-the-problem" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="decomposing-the-problem"><span class="header-section-number">6.2</span> Decomposing the Problem</h2>
+<p>Let’s only take these key considerations in why Trump wouldn’t complete his term:</p>
 <ul>
 <li><p>Death by natural causes </p></li>
 <li><p>Death by assassination </p></li>
@@ -218,7 +208,7 @@ Base Rates
 <li><p>The presidency no longer exists (due to a coup, invasion, etc.) </p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -227,32 +217,32 @@ So…
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>What did we gain from applying this decomposition? The main thing is that it allows us to incorporate age when predicting death from natural causes, which feels correct to me. On the other hand, it left us with a very small sample size for assassinations, and in general left us to make a lot of arbitrary choices that might let personal biases creep in. That being said, the number is in the same ballpark but a bit lower than the 92% answer from the simplest method, which feels right given Biden’s age.</p>
+<p>What did we gain from applying this decomposition? The main thing is that it allows us to incorporate age when predicting death from natural causes, which feels correct to me. On the other hand, it left us with a very small sample size for assassinations, and in general left us to make a lot of arbitrary choices that might let personal biases creep in. That being said, the number is in the same ballpark but a bit lower than the 92% answer from the simplest method, which feels right given Trump’s age.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="other-examples" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="other-examples"><span class="header-section-number">6.2</span> Other Examples</h2>
+<section id="other-examples" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="other-examples"><span class="header-section-number">6.3</span> Other Examples</h2>
 <p>There are many cases where base rates are a useful tool. For instance, maybe I want to understand the probability that I get COVID-19 in the next month (perhaps as a function of what activities I do).</p>
 <blockquote class="blockquote">
 <p><strong>Brainstorming exercise</strong>. What base rates would you use for the above question? What factors are most important to take into account? </p>
 </blockquote>
 <p>Here are some other questions where base rates provide valuable information:</p>
 <ul>
-<li>What will be my GPA after my first term in college?</li>
-<li>How much Series A funding will a specific startup get?</li>
-<li>Will someone break Usain Bolt’s 100-meter dash 9.58s world record by the end of 2024?</li>
-<li>Will any new country join NATO in 2023?</li>
+<li>Probability that I get Covid in the next month</li>
+<li>What job will I have after I graduate College?</li>
+<li>How much Series A funding will this startup get?</li>
+<li>Will someone break Usain Bolt’s 100-meter dash world record (9.58s) by the end of 2024?</li>
 </ul>
 <blockquote class="blockquote">
-<p>*<strong>Brainstorming exercise</strong>. What are other areas where base rates are helpful? </p>
+<p>*<strong>Brainstorming exercise</strong>. What is the probability that you get COVID-19 in the next month? List 2-3 base rates you would look up. </p>
 </blockquote>
 </section>
-<section id="dangers-of-base-rates" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="dangers-of-base-rates"><span class="header-section-number">6.3</span> Dangers of Base Rates</h2>
+<section id="dangers-of-base-rates" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="dangers-of-base-rates"><span class="header-section-number">6.4</span> Dangers of Base Rates</h2>
 <p>As I hinted above, the flexibility of base rate forecasting also carries risk. If we make too many arbitrary choices when defining a base rate, we can succumb to our own cognitive biases. For instance, consider the <a href="https://www.cultivatelabs.com/posts/superforecasting-everything-has-a-base-rate">following article that gave Trump a 3% chance of winning the 2016 election</a>. Its reasoning invokes base rates, defining a reference class of “Candidates that are good with the media and give them something to write about but, let’s be real, could never be president”. They said Trump was in this reference class and no such candidate had ever won, so their base rate was 0%. (They then adjusted it up to 3% based on Trump’s strong polling performance.) If you find yourself doing something like this, watch out.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
