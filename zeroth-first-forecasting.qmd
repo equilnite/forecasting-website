@@ -50,9 +50,7 @@ Note that the choice of what to first-order approximate matters a lot here. If y
 
 ## Limitations of First Order Approximation
 
-In many cases, there’s some clear limit to growth, which means the first-order approximation has to stop eventually. For instance, [Tesla’s revenue has grown around 50% per year from 2015 to 2020](https://www.statista.com/statistics/272120/revenue-of-tesla/). If it continues at this rate, then it would account for >50% of the U.S. economy by 2035. This seems unlikely, so the growth will probably slow down sometime before then.
-
-As a more extreme example, [the number of compute-hours used in the largest AI experiments grew around 10x/year between 2012 and 2018](https://openai.com/blog/ai-and-compute/). This probably can’t continue for more than 6-7 years before matching the world’s total current hardware budget 1.
+In many cases, there’s some clear limit to growth, which means the first-order approximation has to stop eventually. As a more extreme example, [the number of compute-hours used in the largest AI experiments grew around 10x/year between 2012 and 2018](https://openai.com/blog/ai-and-compute/). This probably can’t continue for much more before matching the world’s total current hardware budget.
 
 And as an example that already happened, in early 2020 the number of COVID-19 cases was doubling perhaps every 4.5 days. Starting from a few hundred cases, a first-order approximation of its logarithm would have predicted that everyone in the world would be infected within 4 months. While many people have been infected, it’s not everyone, and it took much longer than 4 months.
 

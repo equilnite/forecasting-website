@@ -12,6 +12,6 @@ Thus, forecasts have to rely on intuition, while informing that intuition with d
 3. combining these considerations into a calibrated probability distribution.
 :::
 
-Within these overarching steps, there are many individual skills that help you make better forecasts. For instance, while forecasts rely on intuition, people's intuitions don't usually map well onto probabilities, at least at first. Fortunately, it is possible to train your intuition to output accurate probabilities with just a few hours of "calibration training" (the subject of Friday's lecture).
+Within these overarching steps, there are many individual skills that help you make better forecasts. For instance, while forecasts rely on intuition, people's intuitions don't usually map well onto probabilities, at least at first. Fortunately, it is possible to train your intuition to output accurate probabilities with just a few hours of "calibration training."
 
 On the considerations front, this involves skills such as estimation, trend extrapolation, building good reference classes, and thinking about incentives. On the outcomes front, this involves combatting cognitive biases such as anchoring, and employing "pre-mortems" and other sanity checks.

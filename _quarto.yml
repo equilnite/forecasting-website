@@ -21,12 +21,14 @@ book:
 format:
   html:
     number-depth: 3
-    include-in-header:
-      - header.html
     theme: cosmo
     df-print: paged
-    css: ["style/console.css", "style/style.css"]
     page-layout: full
+  pdf:
+    margin-left: 0.7in
+    margin-right: 0.7in
+    margin-top: 0.5in
+    margin-bottom: 0.5in
 
 execute:
   echo: false

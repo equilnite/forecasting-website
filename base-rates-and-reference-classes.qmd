@@ -1,9 +1,9 @@
 # Base Rates and Reference Classes
 
-::: {.callout-question .callout}
+::: {.callout-question}
 ## Let’s start by considering the following question
 
-What is the probability that Joe Biden is President of the United States on Nov. 1st, 2024?
+What is the probability that Donald Trump is President of the United States on Nov. 1st, 2028?
 :::
 
 Brainstorm a few factors / historical events that have caused presidents to leave office before the end of their elected term. What is the **base rate** of these events? In other words, what is the rate of occurrence of these events? \vspace{15em}
@@ -15,7 +15,7 @@ Base rates can be powerful as they allow us to draw analogies with related cases
 
 ## Decomposing the Problem
 
-Let's only take these key considerations in why Biden wouldn't complete his term:
+Let's only take these key considerations in why Trump wouldn't complete his term:
 
 - Death by natural causes \vspace{5em}
 
@@ -27,7 +27,7 @@ Let's only take these key considerations in why Biden wouldn't complete his term
 
 ::: {.callout-note collapse="true"}
 ## So...
-What did we gain from applying this decomposition? The main thing is that it allows us to incorporate age when predicting death from natural causes, which feels correct to me. On the other hand, it left us with a very small sample size for assassinations, and in general left us to make a lot of arbitrary choices that might let personal biases creep in. That being said, the number is in the same ballpark but a bit lower than the 92% answer from the simplest method, which feels right given Biden’s age.
+What did we gain from applying this decomposition? The main thing is that it allows us to incorporate age when predicting death from natural causes, which feels correct to me. On the other hand, it left us with a very small sample size for assassinations, and in general left us to make a lot of arbitrary choices that might let personal biases creep in. That being said, the number is in the same ballpark but a bit lower than the 92% answer from the simplest method, which feels right given Trump's age.
 :::
 
 ## Other Examples
@@ -38,12 +38,13 @@ There are many cases where base rates are a useful tool. For instance, maybe I w
 
 Here are some other questions where base rates provide valuable information:
 
-- What will be my GPA after my first term in college?
-- How much Series A funding will a specific startup get?
-- Will someone break Usain Bolt’s 100-meter dash 9.58s world record by the end of 2024?
-- Will any new country join NATO in 2023?
+- Probability that I get Covid in the next month
+- What job will I have after I graduate College?
+- How much Series A funding will this startup get?
+- Will someone break Usain Bolt’s 100-meter dash world record (9.58s) by the end of 2024?
 
-> ***Brainstorming exercise**. What are other areas where base rates are helpful? \vspace{10em}
+
+> ***Brainstorming exercise**. What is the probability that you get COVID-19 in the next month? List 2-3 base rates you would look up. \vspace{10em}
 
 ## Dangers of Base Rates
 
